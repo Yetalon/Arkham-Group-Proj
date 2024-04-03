@@ -1,17 +1,130 @@
-body{
-    font-family: Verdana, sans-serif;
-    font-size: 14pt;
-}
-nav ul {
-    list-style-type: none; 
-    padding: 0; 
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+
+.libre-baskerville-regular {
+  font-family: "Libre Baskerville", serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
-nav ul li {
-    display: inline-block; 
-    margin-right: 10px; 
+.libre-baskerville-bold {
+  font-family: "Libre Baskerville", serif;
+  font-weight: 700;
+  font-style: normal;
 }
 
-nav ul li:last-child {
-    margin-right: 0; 
+.libre-baskerville-regular-italic {
+  font-family: "Libre Baskerville", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+body {
+  font-family: "Libre Baskerville", serif;
+  background-color: #222; /* Cream/Tan background */
+  color: #D9be9d; /* Black text color */
+}
+
+.headerBackground{
+  background-image: url(/images/PawPrintBackgroundModified.png);
+  background-size: 500px;
+  background-repeat: repeat;
+}
+
+.headerTitle{
+  font-size: 72px;
+  text-align: center;
+  font-style: bold;
+  font-stretch: extra-expanded;
+}
+
+.pageTitle{
+  font-size: 52px;
+  font-family: "Libre Baskerville", serif;
+  color: whitesmoke;
+  text-align: center;
+  font-stretch: extra-expanded;
+  margin-bottom: 20px;
+}
+
+
+nav {
+  background-color: #D9be9d; /* Black background for the navigation */
+  padding: 10px;
+  border-radius: 10px; /* Rounded edges for the navigation */
+  margin-bottom: 10px;
+  width: 100%;
+  display: flex;
+}
+
+nav a {
+  color: #222; /* White text color for navigation links */
+  text-decoration: none;
+  font-family: "Libre Baskerville", serif;
+  font-size: 24px;
+  font-weight: bold;
+  margin-right: 10px;
+  width: 20%;
+  text-align: center;
+}
+
+nav a:hover {
+  text-decoration: underline;
+  background-color: #333;
+  color: whitesmoke;
+  border-radius: 10px;
+}
+
+.main-content {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.article {
+  background-color: rgba(179, 188, 199, 0.3); /* Dark gray background for articles */
+  border-radius: 10px; /* Rounded edges for articles */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add shadow to articles */
+  display: flex;
+  align-items: flex-start; /* Align items to the top */
+  margin-bottom: 20px; /* Space between articles */
+  padding: 20px;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+.article-img {
+  border-radius: 10px;
+  width: 250px;
+  height: 350px;
+  margin-right: 2em;
+  box-shadow: 10px 10px 5px #222;
+  }
+
+.article-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.article-title {
+  font-size: 40px; /* Larger font size for titles */
+  font-family: "Libre Baskerville", serif;
+  margin-bottom: 10px;
+  color: whitesmoke;
+  text-align: left;
+}
+
+.article-content {
+  font-size: 24px; /* Larger font size for paragraphs */
+  color: whitesmoke;
+}
+
+.article-link{
+    font-size: 24px; /* Larger font size for paragraphs */
+    color: #D9be9d;
+    text-align: left;
+}
+
+.article-link:hover {
+    background-color:#222;
+    border-radius: 10px;
 }
