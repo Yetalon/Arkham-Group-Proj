@@ -117,9 +117,9 @@ nav a:hover {
 .instagram-media {
   margin: 10px auto; 
   width: 85%; 
-  height: 1480px; 
+  height: 1610px; 
   border-radius: 25px !important;
-  overflow: hidden !important;
+  overflow:scroll !important;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);;
 }
 
