@@ -180,25 +180,39 @@ footer {
 }
 
 @media screen and (max-width: 600px) {
-  .headerContainer {
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  header {
+    height: 90%;
+    width: 110%;
+    display: flex;
+    margin-left: 0;
+  }
+
+  .headerContainer{
+    height: 90%;
     width: 100%;
-    font-size: 1.5em;
-    margin-bottom: 30px;
+    margin: 0 auto;
+    margin-right: 40px;
   }
 
   .headerTitle {
     font-size: 1em;
-    width: 90%;
-    height: 60px;
-    display: flex;
+    width: 80%;
+    height: 50px;
+
   }
 
-  .headerContainer {
-    flex-wrap: wrap;
+  .logo-format {
+    width: 90%;
+    height: 90%;
   }
 
   nav {
-    width: 115%;;
+    width: 95%;
+    margin-left: 4px;
   }
 
   nav a {
@@ -208,10 +222,31 @@ footer {
   body {
     font-size: 16px;
   }
+
+  .updateBlock {
+    width: 90%;
+    margin: 0 auto;
+  }
+  
+  .updateContent > img {
+    width: 100%;
+    height: auto;
+  }
   
   .instagram-media {
     width: 95%;
-    height: 410px;
-    max-height: 600px; /* Adjust the maximum height for smaller screens */
+    height: 420px;
+    max-height: 600px;
+  }
+
+  footer{
+    width: 95%;
+    margin: 0 auto;
+    border-radius: 0;
+  }
+  .footer-container{
+    width: 100%;
+    padding: 0;
+    margin: 0;
   }
 }
